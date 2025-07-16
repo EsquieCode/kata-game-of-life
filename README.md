@@ -38,7 +38,7 @@ Pour installer l'environnement il vous suffit de lancer:
 - Si vous êtes sur WLS/Linux/MAC : l'executable setup.sh
 - Si vous êtes sur Windows: setup.ps1
 
-## Configuration pre-push git
+## Configuration pre-push et commit message git
 
 Après avoir exécuté les installation de projet il va falloir initialisé le pre-push de git pour cela il faudra faire la commande:
 
@@ -50,6 +50,12 @@ Pour WSL/Linux/Mac il faudra aussi faire la commande:
 
 ```bash
 chmod +x githooks/pre-push githooks/pre-push.sh
+```
+
+De plus pour les commits il faudra ajouter la commande :
+
+```bash
+git config commit.template githooks/.gitmessage.txt
 ```
 
 ## Commande du projet

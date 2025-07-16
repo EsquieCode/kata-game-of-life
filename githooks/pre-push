@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+if [[ "$OS" == "Windows_NT" ]]; then
+  if command -v powershell.exe >/dev/null; then
+    echo "[pre-push] Running PowerShell hook..."
+    powershell.exe -ExecutionPolicy Bypass -File "$(pwd)/githooks/pre-push.ps1"
+    exit $?
+  elif command -v cmd.exe >/dev/null; then
+    echo "[pre-push] Running CMD hook..."
+    cmd.exe /C "$(pwd)\\githooks\\pre-push.cmd"
+    exit $?
+  fi
+else
+  echo "[pre-push] Running Bash hook..."
+  bash "$(pwd)/githooks/pre-push.sh"
+  exit $?
+fi

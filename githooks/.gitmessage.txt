@@ -1,0 +1,30 @@
+# <type>(<scope>): <one-line subject, imperative and present tense>
+#
+# Examples:
+# feat(api): add uer registration endpoint
+# fix(auth): handle token expiration correclty
+# docs(readme): improve getting started instructions
+#
+# Available types:
+#  feat: a new features
+#  fix: a bug fix
+#  docs: documentation changly only
+#  styles: formatting (spacing, semicolons, ...), no logic changes
+#  refactor: code change that neither fixes a bug
+#  perf: performance improvement
+#  tests: adding or updating tests
+#  build: changes that affect the build system or dependencies
+#  ci: changes to CI/CD configuration
+#  chore: maintenance tasks (no user-facing impact)
+#
+# Common scopes (customize as needed):
+#  api, ui, auth, db, cli, docker, github, deps, config, tests
+#
+# Body (optional):
+# - Explain what and why
+# - Can span multiples lines
+#
+# Footer (optional):
+# - Refs: #issue-number
+# - Fixes: #issue-number
+# - BREAKING CHANGE: describe the breaking change
